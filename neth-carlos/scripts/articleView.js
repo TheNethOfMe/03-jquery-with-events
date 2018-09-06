@@ -44,7 +44,7 @@ articleView.handleCategoryFilter = function() {
       $('article').hide();
       $(`article[data-category="${$(this).val()}"`).fadeIn(500);
     } else {
-      $('article[data-category]').fadeIn(500);
+      $('article[data-category!="cat"]').fadeIn(500);
     }
     $('#author-filter').val('');
   });
